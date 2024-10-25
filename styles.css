@@ -41,7 +41,7 @@
   /* Banner */
   .banner {
     background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
-                  url("../../media/examples/lizard.png");
+                  url("https://images.pexels.com/photos/29046032/pexels-photo-29046032/free-photo-of-aerial-view-of-turquoise-ocean-waves-on-sandy-beach.jpeg?auto=compress&cs=tinysrgb&w=400");
     background-size: cover;
     background-position: center;
     height: 60vh;
@@ -585,4 +585,4 @@
   
   .upload-options button:hover {
     background-color: #e55a00;
-  }<style>
+  }
