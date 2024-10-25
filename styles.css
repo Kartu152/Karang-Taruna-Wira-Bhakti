@@ -1,155 +1,131 @@
-/* Gaya Umum */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-image: url("https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?auto=compress&cs=tinysrgb&w=400");
-  background-size: cover;
-  color: #333;
+* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
+body {
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* Header */
 header {
-  background-color: #004d4d;
-  color: white;
-  padding: 20px;
-  text-align: center;
+    background-color: #002b5c;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header .logo {
-  width: 60px;
-  vertical-align: middle;
-  margin-right: 10px;
+    max-width: 80px;
 }
 
 header h1 {
-  display: inline;
-  font-size: 24px;
-  font-weight: bold;
+    font-size: 1.8rem;
+    margin: 0.5rem 0;
 }
 
 nav ul {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  margin: 10px 0 0;
-}
-
-nav ul li {
-  margin: 0 10px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
 nav ul li a {
-  color: white;
-  text-decoration: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  transition: background 0.3s;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
-  background-color: #006666;
+    background-color: #004080;
+    border-radius: 5px;
 }
 
-/* Bagian Utama */
+/* Main content */
 main {
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.8);
-  margin: 10px;
-  border-radius: 10px;
+    padding: 2rem;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .intro h2 {
-  font-size: 22px;
-  color: #004d4d;
+    color: #002b5c;
+    font-size: 1.6rem;
 }
 
 .intro p {
-  font-size: 16px;
+    font-size: 1rem;
+    color: #555;
 }
 
-/* Formulir */
-form {
-  margin: 20px 0;
+/* Section Forms */
+section h2 {
+    color: #333;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
 }
 
 form label {
-  display: block;
-  margin: 10px 0 5px;
-  font-weight: bold;
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+    font-weight: bold;
 }
 
 form input[type="text"],
 form input[type="date"],
 form textarea {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  box-sizing: border-box;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-form button {
-  background-color: #004d4d;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s;
+button {
+    padding: 0.6rem 1.2rem;
+    background-color: #002b5c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-form button:hover {
-  background-color: #006666;
-}
-
-/* Daftar Berita, Produk, dan Agenda */
-section h2 {
-  font-size: 20px;
-  color: #004d4d;
-}
-
-.berita, .produk, .agenda {
-  background-color: #f9f9f9;
-  padding: 15px;
-  margin: 10px 0;
-  border-left: 4px solid #004d4d;
-  border-radius: 5px;
-}
-
-.berita h3, .produk h3, .agenda h3 {
-  margin: 0 0 5px;
-  font-size: 18px;
-  color: #004d4d;
-}
-
-/* Gaya Galeri */
-.gambar-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  padding: 20px;
-}
-
-.gambar-container img {
-  width: 200px;
-  height: auto;
-  border-radius: 5px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+button:hover {
+    background-color: #004080;
 }
 
 /* Footer */
 footer {
-  background-color: #004d4d;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+    background-color: #002b5c;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
-footer p {
-  margin: 0;
+/* Galeri */
+#gambar-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#gambar-container img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
