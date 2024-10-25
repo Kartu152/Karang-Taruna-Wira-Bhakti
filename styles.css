@@ -128,7 +128,7 @@ footer {
   gap: 10px;
 }
 
-#gambar-container img {
+#gambar-container {
   width: 150px;
   height: auto;
   border-radius: 8px;
