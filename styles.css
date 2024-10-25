@@ -1,0 +1,590 @@
+/* CSS untuk latar belakang dan gaya */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+  }
+  
+  /* Header */
+  .main-header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .main-header h1 {
+    margin: 0;
+  }
+  
+  .main-header nav ul {
+    list-style: none;
+  }
+  
+  .main-header nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  .main-header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Banner */
+  .banner {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+                  url("../../media/examples/lizard.png");
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #111010;
+  }
+  
+  .banner-text h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .banner-text p {
+    font-size: 1.2rem;
+  }
+  
+  .banner-text .btn {
+    padding: 10px 20px;
+    background-color: #f60;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  /* Tentang Kami Section */
+  .about-section {
+    padding: 50px 0;
+    background-color: #fff;
+  }
+  
+  .about-section h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .about-section p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+  }
+  
+  /* Program Unggulan Section */
+  .programs-section {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+  }
+  
+  .programs-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .program-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .program-card h3 {
+    margin-bottom: 10px;
+    color: #f60;
+  }
+  
+  /* Footer */
+  .main-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .main-footer p {
+    margin: 5px 0;
+  }
+  
+  .main-footer a {
+    color: #f60;
+    text-decoration: none;
+  }
+  /* Tentang Kami Section */
+.about-section {
+    padding: 50px 0;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+  }
+  
+  .about-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .about-section h2 {
+    font-size: 2rem;
+    color: #f60; /* Warna oranye sebagai aksen */
+    margin-bottom: 20px;
+  }
+  
+  .about-section p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  /* Program Kegiatan Section */
+.programs-section {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .programs-section h2 {
+    font-size: 2rem;
+    color: #f60; /* Warna oranye sebagai aksen */
+    margin-bottom: 30px;
+  }
+  
+  .program-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .program-card:hover {
+    transform: translateY(-5px); /* Efek hover */
+  }
+  
+  .program-card h3 {
+    margin-bottom: 10px;
+    color: #333; /* Warna judul */
+  }
+  
+  .program-card p {
+    color: #555; /* Warna teks paragraf */
+    line-height: 1.5;
+  }
+  /* Anggota Section */
+.members-section {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .members-section h2 {
+    font-size: 2rem;
+    color: #f60; /* Warna oranye sebagai aksen */
+    margin-bottom: 30px;
+  }
+  
+  .member-card {
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .member-card:hover {
+    transform: translateY(-5px); /* Efek hover */
+  }
+  
+  .member-card h3 {
+    margin-bottom: 10px;
+    color: #333; /* Warna judul */
+  }
+  
+  .member-card p {
+    color: #555; /* Warna teks paragraf */
+    line-height: 1.5;
+  }
+  /* Berita dan Artikel Section */
+.news-section {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .news-section h2 {
+    font-size: 2rem;
+    color: #f60; /* Warna oranye sebagai aksen */
+    margin-bottom: 30px;
+  }
+  
+  .news-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .news-card:hover {
+    transform: translateY(-5px); /* Efek hover */
+  }
+  
+  .news-card h3 {
+    margin-bottom: 10px;
+    color: #333; /* Warna judul */
+  }
+  
+  .news-card p {
+    color: #555; /* Warna teks paragraf */
+    line-height: 1.5;
+  }
+  
+  .read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #f60; /* Warna link */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .read-more:hover {
+    text-decoration: underline; /* Efek hover pada link */
+  }
+  /* Galeri Section */
+.gallery-section {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .gallery-section h2 {
+    font-size: 2rem;
+    color: #f60; /* Warna oranye sebagai aksen */
+    margin-bottom: 30px;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px; /* Jarak antar gambar */
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .gallery-item img:hover {
+    transform: scale(1.05); /* Efek hover pada gambar */
+  }
+  /* Donasi Section */
+.donate-section {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .donate-section h2 {
+    font-size: 2rem;
+    color: #f60; /* Warna oranye sebagai aksen */
+    margin-bottom: 20px;
+  }
+  
+  .donate-section p {
+    color: #555; /* Warna teks paragraf */
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto 20px;
+  }
+  
+  .qr-code img {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+  }
+  /* Kontak Kami Section */
+.contact-section {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    font-size: 2rem;
+    color: #f60; /* Warna oranye sebagai aksen */
+    margin-bottom: 20px;
+  }
+  
+  .contact-section p {
+    color: #555;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto 20px;
+  }
+  
+  .contact-info p {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info a {
+    color: #f60;
+    text-decoration: none;
+  }
+  
+  .social-links {
+    margin-top: 20px;
+  }
+  
+  .social-links a {
+    color: #f60;
+    font-weight: bold;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .social-links a:hover {
+    text-decoration: underline;
+  }
+  /* Footer */
+.footer {
+    background-color: #333; /* Warna gelap untuk footer */
+    color: #fff; /* Warna teks putih */
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  .footer-nav {
+    margin-top: 10px;
+  }
+  
+  .footer-nav a {
+    color: #f60; /* Warna tautan oranye */
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .footer-nav a:hover {
+    text-decoration: underline; /* Efek hover */
+  }/* Footer */
+.footer {
+  background-color: #333; /* Warna gelap untuk footer */
+  color: #fff; /* Warna teks putih */
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.footer-nav {
+  margin-top: 10px;
+}
+
+.footer-nav a {
+  color: #f60; /* Warna tautan oranye */
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline; /* Efek hover */
+}
+/* Formulir Pendaftaran Section */
+.join-section {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .join-section h2 {
+    font-size: 2rem;
+    color: #f60;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .join-section p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #555;
+  }
+  
+  .join-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .join-form input,
+  .join-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .join-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #f60;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .join-form button:hover {
+    background-color: #e55a00;
+  }
+ 
+ /* Gaya untuk Halaman Login */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f60;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #e55a00;
+}
+
+/* Gaya untuk Halaman Upload */
+.upload-container {
+    padding: 20px;
+}
+
+.upload-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.upload-nav li {
+    margin: 0 10px;
+}
+
+.upload-nav a {
+    text-decoration: none;
+    color: #f60;
+}
+
+.upload-nav a:hover {
+    text-decoration: underline;
+}
+
+.upload-container section {
+    margin-top: 30px;
+}
+
+.upload-container h3 {
+    margin-bottom: 10px;
+}
+
+.upload-container label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.upload-container input,
+.upload-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.upload-container button {
+    padding: 10px;
+    background-color: #f60;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.upload-container button:hover {
+    background-color: #e55a00;
+}
