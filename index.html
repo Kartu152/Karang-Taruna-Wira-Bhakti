@@ -36,29 +36,27 @@
     <div class="container">
       <h2>Tentang Karang Taruna Wira Bhakti</h2>
       <p>Karang Taruna adalah organisasi kepemudaan yang berfungsi sebagai wadah bagi para pemuda untuk berkembang dan berkontribusi pada masyarakat, khususnya di tingkat desa atau kelurahan. Dibentuk di Indonesia pada tahun 1960-an, organisasi ini memiliki tujuan untuk membantu pemuda dalam mengembangkan diri, mempererat persatuan, dan memberdayakan masyarakat melalui berbagai program yang mencakup pendidikan, kegiatan sosial, pelatihan, dan ekonomi.Visi dan Misi Karang Taruna
-      <p>Visi: Mewujudkan generasi muda yang aktif, kreatif, mandiri, dan memiliki jiwa kepedulian terhadap sesama dan lingkungan.
+      <p>Visi: 
+        Mewujudkan generasi muda yang aktif, kreatif, mandiri, dan memiliki jiwa kepedulian terhadap sesama dan lingkungan.
         
         <p>Misi:
         
-            <p>Meningkatkan keterampilan dan kemampuan generasi muda melalui berbagai pelatihan dan kegiatan.
+            Meningkatkan keterampilan dan kemampuan generasi muda melalui berbagai pelatihan dan kegiatan.
         Mendorong partisipasi pemuda dalam pembangunan desa.
         Menyediakan wadah yang sehat bagi pemuda untuk berekspresi dan mengembangkan potensi.
         Melaksanakan kegiatan sosial, ekonomi, budaya, dan olahraga untuk memberdayakan pemuda.
         <p>Tujuan dan Fungsi Karang Taruna
             <p>1.  Pengembangan Diri: Melalui berbagai kegiatan yang bertujuan meningkatkan keterampilan dan kemampuan, anggota Karang Taruna dapat meningkatkan kapasitas diri, baik dalam keterampilan sosial, ekonomi, maupun pendidikan.
-        
                 <p>2.  Kepedulian Sosial: Karang Taruna menjalankan berbagai program sosial seperti bakti sosial, bantuan bencana, dan program pemberdayaan masyarakat untuk menanamkan nilai kepedulian dan solidaritas.
-        
                     <p>3. Pemberdayaan Ekonomi: Dengan program-program ekonomi kreatif, Karang Taruna memberikan peluang bagi pemuda untuk berwirausaha dan menciptakan lapangan pekerjaan di lingkungannya.
-        
                         <p>4. Pelestarian Budaya: Karang Taruna juga berperan dalam melestarikan budaya lokal melalui kegiatan budaya seperti pentas seni dan peringatan hari besar nasional.
-        
+
                             <p> Kegiatan Karang Taruna
-                                <p>Beberapa kegiatan umum yang dilakukan oleh Karang Taruna antara lain:
+                                Beberapa kegiatan umum yang dilakukan oleh Karang Taruna antara lain:
         
                                     <p>Pelatihan Keterampilan: Pelatihan untuk meningkatkan keterampilan kerja, seperti pelatihan kerajinan tangan, teknologi informasi, atau wirausaha.
-        Kegiatan Sosial: Bakti sosial, penghijauan, dan program bantuan untuk masyarakat kurang mampu.
-        Olahraga dan Seni: Lomba olahraga dan seni untuk menumbuhkan jiwa sportivitas dan kreativitas.
+                                        <p>Kegiatan Sosial: Bakti sosial, penghijauan, dan program bantuan untuk masyarakat kurang mampu.
+                                            <p>Olahraga dan Seni: Lomba olahraga dan seni untuk menumbuhkan jiwa sportivitas dan kreativitas.
         Penyuluhan: Program kesehatan, pendidikan, dan lingkungan untuk meningkatkan kesadaran pemuda tentang isu-isu penting di masyarakat.</p>
     </div>
   </section>
@@ -261,54 +259,90 @@
       </form>
     </div>
   </section>
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Karang Taruna Wira Bhakti</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <div class="login-container">
-      <h2>Login</h2>
-      <form id="loginForm">
-        <label for="userId">ID:</label>
-        <input type="text" id="userId" name="userId" required>
-        
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        
-        <button type="button" onclick="login()">Masuk</button>
-      </form>
-      <p id="errorMsg" style="color:red; display:none;">ID atau Password salah.</p>
-    </div>
-  
-    <script src="script.js"></script>
-  </body>
-  </html>
+
+</style>
+/admin-dashboard
+  ├── index.html
+  ├── dashboard.html
+  ├── style.css
+  ├── script.js
   <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard Karang Taruna Wira Bhakti</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="dashboard-container">
-    <h2>Dashboard Admin</h2>
-    <p>Selamat datang di dashboard. Anda dapat mengelola konten berikut:</p>
-    
-    <div class="upload-options">
-      <button onclick="window.location.href='upload-berita.html'">Upload Berita</button>
-      <button onclick="window.location.href='upload-galeri.html'">Upload Galeri</button>
-      <button onclick="window.location.href='upload-agenda.html'">Upload Agenda</button>
-      <button onclick="window.location.href='upload-produk.html'">Upload Produk</button>
-      <button onclick="window.location.href='upload-turnamen.html'">Upload Turnamen</button>
+    <div class="login-container">
+        <h2>Admin Login</h2>
+        <form id="loginForm" onsubmit="return login()">
+            <label for="username">Username</label>
+            <input type="text" id="username" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p id="error-message"></p>
     </div>
-  </div>
-</script>
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <ul>
+            <li><a href="#news">Upload Berita & Artikel</a></li>
+            <li><a href="#gallery">Galeri</a></li>
+            <li><a href="#agenda">Agenda Acara</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Admin Dashboard</h1>
+        
+        <section id="news">
+            <h2>Upload Berita & Artikel</h2>
+            <form>
+                <label>Judul:</label>
+                <input type="text" required>
+                <label>Konten:</label>
+                <textarea rows="4" required></textarea>
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+        
+        <section id="gallery">
+            <h2>Galeri</h2>
+            <form>
+                <label>Upload Foto:</label>
+                <input type="file" required>
+                <button type="submit">Upload Foto</button>
+            </form>
+        </section>
+        
+        <section id="agenda">
+            <h2>Agenda Acara</h2>
+            <form>
+                <label>Nama Acara:</label>
+                <input type="text" required>
+                <label>Tanggal:</label>
+                <input type="date" required>
+                <label>Deskripsi:</label>
+                <textarea rows="3" required></textarea>
+                <button type="submit">Tambah Agenda</button>
+            </form>
+        </section>
+    </div>
 </body>
 </html>
 </style>

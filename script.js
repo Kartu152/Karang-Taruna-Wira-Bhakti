@@ -1,19 +1,16 @@
-// script.js
 function login() {
-  const userId = document.getElementById("userId").value;
+  const username = document.getElementById("username").value;
   const password = document.getElementById("password").value;
-  
-  // Contoh kredensial (ID dan password)
-  const validUserId = "admin";
-  const validPassword = "1234";
+  const errorMessage = document.getElementById("error-message");
 
-  if (userId === validUserId && password === validPassword) {
-    // Login berhasil, arahkan ke halaman dashboard
-    window.location.href = "dashboard.html";
+  if (username === "admin" && password === "password123") {
+      window.location.href = "dashboard.html";
+      return false; // prevent form submission
   } else {
-    // Login gagal, tampilkan pesan error
-    document.getElementById("errorMsg").style.display = "block";
+      errorMessage.textContent = "Username atau password salah!";
+      return false; // prevent form submission
   }
+}
 
 // Fungsi untuk menampilkan berita
 function displayNews() {
