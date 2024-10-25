@@ -1,131 +1,142 @@
-* Reset dasar */
+/* Reset dasar */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Gaya Umum untuk Body */
 body {
-    background-color: #f4f6f9;
-    color: #333;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-/* Header */
+/* Gaya Header */
 header {
-    background-color: #002b5c;
-    color: white;
-    padding: 1rem 0;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-header .logo {
-    max-width: 80px;
+  background-color: #005cbf;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
 
 header h1 {
-    font-size: 1.8rem;
-    margin: 0.5rem 0;
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
+header .logo {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+/* Gaya Navigasi */
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 15px;
+  transition: background 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #004080;
-    border-radius: 5px;
+  background-color: #003d8f;
+  border-radius: 5px;
 }
 
-/* Main content */
+/* Gaya Main Content */
 main {
-    padding: 2rem;
+  flex: 1;
+  padding: 20px;
 }
 
 .intro {
-    text-align: center;
-    margin-bottom: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .intro h2 {
-    color: #002b5c;
-    font-size: 1.6rem;
+  color: #005cbf;
+  font-size: 1.8rem;
 }
 
 .intro p {
-    font-size: 1rem;
-    color: #555;
+  font-size: 1rem;
+  color: #555;
 }
 
-/* Section Forms */
-section h2 {
-    color: #333;
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-}
-
+/* Gaya untuk Formulir */
 form label {
-    display: block;
-    margin: 0.5rem 0 0.2rem;
-    font-weight: bold;
+  font-weight: bold;
 }
 
 form input[type="text"],
-form input[type="date"],
-form textarea {
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+form textarea,
+form input[type="date"] {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-button {
-    padding: 0.6rem 1.2rem;
-    background-color: #002b5c;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+form button {
+  background-color: #005cbf;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
 }
 
-button:hover {
-    background-color: #004080;
+form button:hover {
+  background-color: #003d8f;
 }
 
-/* Footer */
+/* Gaya untuk Daftar */
+#daftarBerita,
+#daftarProduk,
+#daftarAgenda {
+  margin-top: 20px;
+}
+
+/* Gaya Footer */
 footer {
-    background-color: #002b5c;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  background-color: #005cbf;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: auto;
 }
 
-/* Galeri */
+/* Gaya Galeri */
 #gambar-container {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 
 #gambar-container img {
-    width: 100%;
-    max-width: 250px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+  }
 }
