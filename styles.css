@@ -487,104 +487,102 @@
     background-color: #e55a00;
   }
  
- /* Gaya untuk Halaman Login */
+/* Login Container */
 .login-container {
-    max-width: 400px;
-    margin: 50px auto;
+    width: 300px;
+    margin: 100px auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-}
-
-.login-container h2 {
+  }
+  
+  .login-container h2 {
+    color: #333;
     margin-bottom: 20px;
-}
-
-.login-form label {
+  }
+  
+  .login-container label {
     display: block;
     margin: 10px 0 5px;
-}
-
-.login-form input {
+  }
+  
+  .login-container input {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
-}
-
-.login-form button {
+  }
+  
+  .login-container button {
     width: 100%;
     padding: 10px;
     background-color: #f60;
-    color: white;
+    color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-}
-
-.login-form button:hover {
+    transition: background-color 0.3s;
+  }
+  
+  .login-container button:hover {
     background-color: #e55a00;
-}
-
-/* Gaya untuk Halaman Upload */
-.upload-container {
-    padding: 20px;
-}
-
-.upload-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-}
-
-.upload-nav li {
-    margin: 0 10px;
-}
-
-.upload-nav a {
-    text-decoration: none;
-    color: #f60;
-}
-
-.upload-nav a:hover {
-    text-decoration: underline;
-}
-
-.upload-container section {
-    margin-top: 30px;
-}
-
-.upload-container h3 {
-    margin-bottom: 10px;
-}
-
-.upload-container label {
+  }
+  /* Dashboard Container */
+.dashboard-container {
+    width: 500px;
+    margin: 100px auto;
+    text-align: center;
+  }
+  
+  .dashboard-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .upload-options button {
     display: block;
-    margin: 10px 0 5px;
-}
-
-.upload-container input,
-.upload-container textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.upload-container button {
-    padding: 10px;
+    margin: 10px 0;
     background-color: #f60;
-    color: white;
+    color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-}
-
-.upload-container button:hover {
+    transition: background-color 0.3s;
+  }
+  
+  .upload-options button:hover {
     background-color: #e55a00;
-}
+  }
+  /* Dashboard Container */
+.dashboard-container {
+    width: 500px;
+    margin: 100px auto;
+    text-align: center;
+  }
+  
+  .dashboard-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .upload-options button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f60;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .upload-options button:hover {
+    background-color: #e55a00;
+  }<style>

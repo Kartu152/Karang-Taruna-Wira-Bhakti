@@ -309,118 +309,54 @@
       </form>
     </div>
   </section>
-  <!-- Halaman Khusus Pengurus -->
   <!DOCTYPE html>
   <html lang="en">
   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Login - Karang Taruna Wira Bhakti</title>
-      <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Karang Taruna Wira Bhakti</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-      <div class="login-container">
-          <h2>Login</h2>
-          <form action="upload.html" method="POST" class="login-form">
-              <label for="username">ID Pengguna:</label>
-              <input type="text" id="username" name="username" required />
+    <div class="login-container">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <label for="userId">ID:</label>
+        <input type="text" id="userId" name="userId" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <button type="button" onclick="login()">Masuk</button>
+      </form>
+      <p id="errorMsg" style="color:red; display:none;">ID atau Password salah.</p>
+    </div>
   
-              <label for="password">Kata Sandi:</label>
-              <input type="password" id="password" name="password" required />
-  
-              <button type="submit">Masuk</button>
-          </form>
-      </div>
+    <script src="script.js"></script>
   </body>
   </html>
   <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upload Konten - Karang Taruna Wira Bhakti</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Karang Taruna Wira Bhakti</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="upload-container">
-        <h2>Upload Konten</h2>
-        <nav class="upload-nav">
-            <ul>
-                <li><a href="#news">Upload Berita</a></li>
-                <li><a href="#gallery">Upload Galeri</a></li>
-                <li><a href="#agenda">Upload Agenda</a></li>
-                <li><a href="#products">Upload Produk</a></li>
-                <li><a href="#tournaments">Upload Turnamen</a></li>
-            </ul>
-        </nav>
-
-        <section id="news">
-            <h3>Upload Berita</h3>
-            <form action="submit_news.php" method="POST">
-                <label for="news-title">Judul Berita:</label>
-                <input type="text" id="news-title" name="news-title" required />
-                
-                <label for="news-content">Konten Berita:</label>
-                <textarea id="news-content" name="news-content" rows="5" required></textarea>
-
-                <button type="submit">Kirim Berita</button>
-            </form>
-        </section>
-
-        <section id="gallery">
-            <h3>Upload Galeri</h3>
-            <form action="submit_gallery.php" method="POST" enctype="multipart/form-data">
-                <label for="gallery-image">Gambar Galeri:</label>
-                <input type="file" id="gallery-image" name="gallery-image" accept="image/*" required />
-                
-                <button type="submit">Kirim Gambar</button>
-            </form>
-        </section>
-
-        <section id="agenda">
-            <h3>Upload Agenda</h3>
-            <form action="submit_agenda.php" method="POST">
-                <label for="agenda-title">Judul Agenda:</label>
-                <input type="text" id="agenda-title" name="agenda-title" required />
-
-                <label for="agenda-date">Tanggal Agenda:</label>
-                <input type="date" id="agenda-date" name="agenda-date" required />
-
-                <label for="agenda-description">Deskripsi Agenda:</label>
-                <textarea id="agenda-description" name="agenda-description" rows="5" required></textarea>
-
-                <button type="submit">Kirim Agenda</button>
-            </form>
-        </section>
-
-        <section id="products">
-            <h3>Upload Produk</h3>
-            <form action="submit_product.php" method="POST">
-                <label for="product-name">Nama Produk:</label>
-                <input type="text" id="product-name" name="product-name" required />
-                
-                <label for="product-description">Deskripsi Produk:</label>
-                <textarea id="product-description" name="product-description" rows="5" required></textarea>
-
-                <button type="submit">Kirim Produk</button>
-            </form>
-        </section>
-
-        <section id="tournaments">
-            <h3>Upload Turnamen</h3>
-            <form action="submit_tournament.php" method="POST">
-                <label for="tournament-name">Nama Turnamen:</label>
-                <input type="text" id="tournament-name" name="tournament-name" required />
-                
-                <label for="tournament-date">Tanggal Turnamen:</label>
-                <input type="date" id="tournament-date" name="tournament-date" required />
-
-                <label for="tournament-description">Deskripsi Turnamen:</label>
-                <textarea id="tournament-description" name="tournament-description" rows="5" required></textarea>
-
-                <button type="submit">Kirim Turnamen</button>
-            </form>
-        </section>
+  <div class="dashboard-container">
+    <h2>Dashboard Admin</h2>
+    <p>Selamat datang di dashboard. Anda dapat mengelola konten berikut:</p>
+    
+    <div class="upload-options">
+      <button onclick="window.location.href='upload-berita.html'">Upload Berita</button>
+      <button onclick="window.location.href='upload-galeri.html'">Upload Galeri</button>
+      <button onclick="window.location.href='upload-agenda.html'">Upload Agenda</button>
+      <button onclick="window.location.href='upload-produk.html'">Upload Produk</button>
+      <button onclick="window.location.href='upload-turnamen.html'">Upload Turnamen</button>
     </div>
+  </div>
+</script>
+</style>
 </body>
 </html>
