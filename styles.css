@@ -1,3 +1,5 @@
+/* style.css */
+
 /* Reset dasar */
 * {
   margin: 0;
@@ -5,138 +7,137 @@
   box-sizing: border-box;
 }
 
-/* Gaya Umum untuk Body */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
-  color: #333;
   line-height: 1.6;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  color: #333;
+  background: url('../assets/images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
-/* Gaya Header */
 header {
-  background-color: #005cbf;
+  background-color: rgba(0, 0, 128, 0.8);
   color: #fff;
-  padding: 20px;
+  padding: 1em 0;
   text-align: center;
-}
-
-header h1 {
-  font-size: 2rem;
-  margin-bottom: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 header .logo {
   width: 80px;
-  margin-bottom: 10px;
+  height: auto;
+  margin: 0 auto 10px;
 }
 
-/* Gaya Navigasi */
+header h1 {
+  font-size: 2em;
+  margin: 0.2em 0;
+}
+
 nav ul {
   list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 15px;
 }
 
 nav ul li a {
   color: #fff;
   text-decoration: none;
-  padding: 8px 15px;
-  transition: background 0.3s;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
 nav ul li a:hover {
-  background-color: #003d8f;
-  border-radius: 5px;
+  color: #ffd700;
 }
 
-/* Gaya Main Content */
 main {
-  flex: 1;
-  padding: 20px;
-}
-
-.intro {
-  text-align: center;
-  margin-bottom: 20px;
+  padding: 2em;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .intro h2 {
-  color: #005cbf;
-  font-size: 1.8rem;
+  font-size: 1.8em;
+  color: #444;
 }
 
 .intro p {
-  font-size: 1rem;
-  color: #555;
+  margin-top: 1em;
+  font-size: 1.1em;
 }
 
-/* Gaya untuk Formulir */
+/* Section Styling */
+section {
+  margin: 1.5em 0;
+}
+
 form label {
+  display: block;
   font-weight: bold;
+  margin-top: 1em;
 }
 
 form input[type="text"],
-form textarea,
-form input[type="date"] {
+form input[type="date"],
+form textarea {
   width: 100%;
-  padding: 8px;
-  margin: 8px 0 15px;
+  padding: 10px;
+  margin-top: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
 form button {
-  background-color: #005cbf;
+  background-color: rgba(0, 0, 128, 0.8);
   color: #fff;
-  border: none;
   padding: 10px 20px;
-  cursor: pointer;
+  border: none;
   border-radius: 5px;
-  transition: background 0.3s;
+  cursor: pointer;
+  margin-top: 1em;
+  transition: background-color 0.3s;
 }
 
 form button:hover {
-  background-color: #003d8f;
+  background-color: #ffd700;
 }
 
-/* Gaya untuk Daftar */
-#daftarBerita,
-#daftarProduk,
-#daftarAgenda {
+/* Galeri */
+#gambar-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
   margin-top: 20px;
 }
 
-/* Gaya Footer */
+#gambar-container img {
+  width: 100%;
+  max-width: 200px;
+  border: 2px solid #444;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+#gambar-container img:hover {
+  transform: scale(1.1);
+}
+
+/* Footer */
 footer {
-  background-color: #005cbf;
+  background-color: rgba(0, 0, 128, 0.8);
   color: #fff;
   text-align: center;
-  padding: 15px;
-  margin-top: auto;
+  padding: 1em 0;
+  position: sticky;
+  bottom: 0;
 }
 
-/* Gaya Galeri */
-#gambar-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-}
-
-#gambar-container {
-  width: 150px;
-  height: auto;
-  border-radius: 8px;
-}
-
-/* Responsif */
-@media (max-width: 768px) {
-  nav ul {
-      flex-direction: column;
-  }
+footer p {
+  font-size: 0.9em;
 }
